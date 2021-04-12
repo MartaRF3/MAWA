@@ -157,5 +157,10 @@ h1, p, span {
   text-align: center;
   font-size: 40px;
 }
+.repo {
+  position: relative;
+  bottom: -10px;
+  font-size: 10px;
+}
 
 /*# sourceMappingURL=style.css.map */
