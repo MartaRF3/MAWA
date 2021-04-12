@@ -70,7 +70,7 @@ function currentWeatherInCurrentLocation(){
   function fetchWeatherFrom(position) {
     let myLat = position.coords.latitude;
     let myLong = position.coords.longitude;
-    let APIKey = "e61181eedc6dee94a571b45ef2692956";
+    let APIKey;
     let APIUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${APIKey}&units=metric`;
 
     fetch(APIUrl)
@@ -158,7 +158,7 @@ conversorButton.addEventListener("click", function(){
 
 // Feature #4 - Extract actual info from API
 function fetchCurrentWeather() {
-  const APIKey = 'e61181eedc6dee94a571b45ef2692956';
+  const APIKey;
   // let myLang = 'es';
   let APIUrl = `https://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${APIKey}&units=metric`
   // let APIUrl = `https://api.openweathermap.org/data/2.5/weather?q=${newCity}&appid=${APIKey}&units=metric&lang=${myLang}`
