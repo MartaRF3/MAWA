@@ -198,7 +198,18 @@ a {
   position: relative;
   bottom: -10px;
   font-size: 10px;
-  a {font-size: 13px;}
+  a {
+    font-size: 13px;
+    transition: all 200ms ease-in;
+  }
+
+  &:hover {
+    a {
+      color: var(--purple);
+      font-size: 15px;
+      text-shadow: var(--light-shadow);
+    }
+  }
 }
 
 @media (min-width: 800px) {
@@ -216,10 +227,20 @@ a {
     }
     span.capital:nth-child(3) { margin-left: 0}
   }
+  .searcher {
+    &__input {
+      width: 400px;
+    }
+  }
   .current {
     padding-right: calc(var(--pad-3)*2);
     &__title {
       font-size: 45px;
+    }
+  }
+  .forecast {
+    &__card {
+      width: auto;
     }
   }
 }

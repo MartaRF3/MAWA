@@ -190,6 +190,12 @@ a {
 }
 .repo a {
   font-size: 13px;
+  transition: all 200ms ease-in;
+}
+.repo:hover a {
+  color: var(--purple);
+  font-size: 15px;
+  text-shadow: var(--light-shadow);
 }
 
 @media (min-width: 800px) {
@@ -208,11 +214,19 @@ a {
     margin-left: 0;
   }
 
+  .searcher__input {
+    width: 400px;
+  }
+
   .current {
     padding-right: calc(var(--pad-3)*2);
   }
   .current__title {
     font-size: 45px;
+  }
+
+  .forecast__card {
+    width: auto;
   }
 }
 
