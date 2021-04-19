@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SheCodes | Weather App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="left-container">
+          <form class="searcher" action="#">
+            <input
+              class="searcher__input"
+              type="text"
+              name="city"
+              id="city"
+              autofocus="on"
+              autocomplete="off"
+              placeholder="Write a city here..."
+            />
+            <button class="searcher__submit" type="submit" id="submit">🔎</button>
+          </form>
+          <button class="local-city">Your current location</button>
+        </div>
+        <div class="current">
+          <h1 class="current__title"></h1>
+          <p class="current__date"></p>
+          <p class="current__temperature">
+            <span id="current-emoji">☀</span>
+            <span id="current-temp-min"></span><span class="temp-format">°C</span> /
+            <span id="current-temp-max"></span><span class="temp-format">°C</span>
+          </p>
+          <div class="temp-converter">
+            <button id="converter">See in °F</button>
+          </div>
+        </div>
+      </div>
+      <section class="forecast">
+        <div class="forecast__card">
+          <p class="forecast__date">Mon 05/03</p>
+          <p class="forecast__emoji" id="forecast-emoji-1">☔</p>
+          <p class="forecast__temperature">
+            <span id="forecast-temp-min-1">18</span>°C /
+            <span id="forecast-temp-max-1">22</span>°C
+          </p>
+        </div>
+        <div class="forecast__card">
+          <p class="forecast__date">Mon 05/03</p>
+          <p class="forecast__emoji" id="forecast-emoji-2">☔</p>
+          <p class="forecast__temperature">
+            <span id="forecast-temp-min-2">18</span>°C /
+            <span id="forecast-temp-max-2">22</span>°C
+          </p>
+        </div>
+        <div class="forecast__card">
+          <p class="forecast__date">Mon 05/03</p>
+          <p class="forecast__emoji" id="forecast-emoji-3">☔</p>
+          <p class="forecast__temperature">
+            <span id="forecast-temp-min-3">18</span>°C /
+            <span id="forecast-temp-max-3">22</span>°C
+          </p>
+        </div>
+        <div class="forecast__card">
+          <p class="forecast__date">Mon 05/03</p>
+          <p class="forecast__emoji" id="forecast-emoji-4">☔</p>
+          <p class="forecast__temperature">
+            <span id="forecast-temp-min-4">18</span>°C /
+            <span id="forecast-temp-max-4">22</span>°C
+          </p>
+        </div>
+        <div class="forecast__card">
+          <p class="forecast__date">Mon 05/03</p>
+          <p class="forecast__emoji" id="forecast-emoji-5">☔</p>
+          <p class="forecast__temperature">
+            <span id="forecast-temp-min-5">18</span>°C /
+            <span id="forecast-temp-max-5">22</span>°C
+          </p>
+        </div>
+      </section>
+      <p class="repo">Check out the 
+        <a href="https://github.com/MartaRF3/SheCodes-Plus">
+          Git Repository
+        </a>
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
