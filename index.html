@@ -41,61 +41,19 @@
         <button class="current-city">Your current location</button>
       </div>
       <div class="current">
-        <h2 class="current__title">Barcelona</h2>
-        <p class="current__info" id="current-date"></p>
-        <p class="current__info" id="current-wind">Wind: blabla</p>
-        <p class="current__info" id="current-humidity">Humidity: blabla</p>
-        <p class="current__info" id="current-state">Description</p>
+        <h2 class="current__title">City</h2>
+        <p class="current__info" id="current-date">Date</p>
+        <p class="current__info" id="current-wind">Wind speed</p>
+        <p class="current__info" id="current-humidity">Humidity</p>
+        <p class="current__info" id="current-state"></p>
         <p class="current__temperature">
           <span id="current-emoji"></span>
-          <span id="current-temp-min">22</span><span class="temp-format">°C</span> /
-          <span id="current-temp-max">24</span><span class="temp-format">°C</span>
+          <span id="current-temp-min" class="temp">Min</span><span class="temp-format">°C</span> /
+          <span id="current-temp-max" class="temp">Max</span><span class="temp-format">°C</span>
         </p>
         <div class="temp-converter">
           <button id="converter">See in °F</button>
         </div>
-      </div>
-    </section>
-    <section class="forecast">
-      <div class="forecast__card">
-        <p class="forecast__date" id="forecast-date-1">Mon 05/03</p>
-        <p class="forecast__emoji" id="forecast-emoji-1">☔</p>
-        <p class="forecast__temperature">
-          <span id="forecast-temp-min-1">18</span><span class="temp-format">°C</span> /
-          <span id="forecast-temp-max-1">22</span><span class="temp-format">°C</span>
-        </p>
-      </div>
-      <div class="forecast__card">
-        <p class="forecast__date" id="forecast-date-2">Mon 05/03</p>
-        <p class="forecast__emoji" id="forecast-emoji-2">☔</p>
-        <p class="forecast__temperature">
-          <span id="forecast-temp-min-2">18</span><span class="temp-format">°C</span> /
-          <span id="forecast-temp-max-2">22</span><span class="temp-format">°C</span>
-        </p>
-      </div>
-      <div class="forecast__card">
-        <p class="forecast__date" id="forecast-date-3">Mon 05/03</p>
-        <p class="forecast__emoji" id="forecast-emoji-3">☔</p>
-        <p class="forecast__temperature">
-          <span id="forecast-temp-min-3">18</span><span class="temp-format">°C</span> /
-          <span id="forecast-temp-max-3">22</span><span class="temp-format">°C</span>
-        </p>
-      </div>
-      <div class="forecast__card">
-        <p class="forecast__date" id="forecast-date-4">Mon 05/03</p>
-        <p class="forecast__emoji" id="forecast-emoji-4">☔</p>
-        <p class="forecast__temperature">
-          <span id="forecast-temp-min-4">18</span><span class="temp-format">°C</span> /
-          <span id="forecast-temp-max-4">22</span><span class="temp-format">°C</span>
-        </p>
-      </div>
-      <div class="forecast__card">
-        <p class="forecast__date" id="forecast-date-5">Mon 05/03</p>
-        <p class="forecast__emoji" id="forecast-emoji-5">☔</p>
-        <p class="forecast__temperature">
-          <span id="forecast-temp-min-5">18</span><span class="temp-format">°C</span> /
-          <span id="forecast-temp-max-5">22</span><span class="temp-format">°C</span>
-        </p>
       </div>
     </section>
     <p class="repo">Check out the 
@@ -103,6 +61,7 @@
         Git Repository
       </a>
     </p>
+    <section class="forecast"></section>
   </div>
   <script src="src/script.js"></script>
 </body>

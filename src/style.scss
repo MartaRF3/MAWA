@@ -114,6 +114,7 @@ a {
     font-weight: 700;
   }
   &__temperature {
+    display: inline-block;
     padding-bottom: var(--pad-3);
 
     color: var(--black);
@@ -196,7 +197,8 @@ a {
 
 .repo {
   position: relative;
-  bottom: -10px;
+  bottom: 40px;
+  left: 7px;
   font-size: 10px;
   a {
     font-size: 13px;
@@ -206,7 +208,6 @@ a {
   &:hover {
     a {
       color: var(--purple);
-      font-size: 15px;
       text-shadow: var(--light-shadow);
     }
   }

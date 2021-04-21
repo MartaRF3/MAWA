@@ -111,6 +111,7 @@ a {
   font-weight: 700;
 }
 .current__temperature {
+  display: inline-block;
   padding-bottom: var(--pad-3);
   color: var(--black);
   font-size: 34px;
@@ -185,7 +186,8 @@ a {
 
 .repo {
   position: relative;
-  bottom: -10px;
+  bottom: 40px;
+  left: 7px;
   font-size: 10px;
 }
 .repo a {
@@ -194,7 +196,6 @@ a {
 }
 .repo:hover a {
   color: var(--purple);
-  font-size: 15px;
   text-shadow: var(--light-shadow);
 }
 
