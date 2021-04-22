@@ -162,10 +162,28 @@ function whatDayIsIt() {
 
   let date = now.getDate();
   let day = now.getDay();
-  let weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-  day = weekDays[day];
+  let weekDays;
+  if (myLang = 'es') {
+    weekDays = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
+  } else if (myLang = 'ca') {
+    weekDays = ['Dilluns', 'Dimarts', 'Dimecres', 'Dijous', 'Divendres', 'Dissabte', 'Diumenge'];
+  } else if (myLang = 'de') {
+    weekDays = ['Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag', 'Sonntag'];
+  } else {
+    weekDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']; 
+  };
+  day = weekDays[day-1];
   let month = now.getMonth();
-  let allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+  let allMonths;
+  if (myLang = 'es') {
+    allMonths = ['Enero', 'Ferbrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+  } else if (myLang = 'ca') {
+    allMonths =  ['Gener', 'Ferbrer', 'Març', 'Abril', 'Maig', 'Juny', 'Juliol', 'Agost', 'Septembre', 'Octubre', 'Novembre', 'Decembre'];
+  } else if (myLang = 'de') {
+    allMonths =  ['Januar', 'Februar', 'März', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'];
+  } else {
+    allMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']; 
+  };
   month = allMonths[month];
   let hours = now.getHours();
   let minutes = now.getMinutes();
